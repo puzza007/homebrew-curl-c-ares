@@ -28,7 +28,7 @@ class Curl < Formula
   keg_only :provided_by_macos
 
   depends_on "pkg-config" => :build
-  epends_on "c-ares" => :build
+  depends_on "c-ares" => :build
   depends_on "brotli"
   depends_on "libidn2"
   depends_on "libmetalink"
