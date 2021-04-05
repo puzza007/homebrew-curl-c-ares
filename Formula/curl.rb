@@ -72,7 +72,7 @@ class Curl < Formula
       args << "--with-gssapi=#{Formula["krb5"].opt_prefix}"
     end
 
-    args << "--enable-ares=#{Formula["c-ares"].opt_prefix}"
+    args << "--enable-threaded-resolver"
     
     system "./configure", *args
     system "make", "install"
